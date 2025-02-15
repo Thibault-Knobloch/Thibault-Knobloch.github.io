@@ -95,6 +95,10 @@
         font-size: 1.1rem;
         max-width: 100%;
     }
+
+    .scroll-indicator {
+        bottom: 62px;
+    }
 }
 
 @media (max-width: 480px) {
