@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #00cec9;
+    --accent-color: #fd79a8;
+    --background-color: #0a0a0a;
+    --text-color: #dfe6e9;
+    --code-font: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'Consolas', 'Monaco', monospace;
+}
+
+body {
+    font-family: var(--code-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    letter-spacing: -0.02em; /* Slightly tighter letter spacing for code fonts */
+}
+
+/* Add this in the head of your HTML */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Basic horizontal scrolling for projects */
+.projects-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.project {
+    min-width: 100%;
+    scroll-snap-align: start;
+} 

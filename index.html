@@ -3,23 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Thibault Knobloch - Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/welcome.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-    <h1>Personal website is coming soon!</h1>
+    <div class="container">
+        <!-- Welcome Section -->
+        <section class="section welcome">
+            <h1>Thibault Knobloch</h1>
+            <p class="description">Full Stack Developer - AI Engineering | Crafting digital experiences and exploring the boundaries of AI integration</p>
+            <div class="scroll-indicator">↓</div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-container">
+            <div class="timeline-path"></div>
+            <div class="project" data-project-id="1">
+                <div class="project-date">Jan 2025</div>
+                <div class="project-content">
+                    <h2>AI-Powered Content Generator</h2>
+                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                </div>
+            </div>
+            
+            <div class="project" data-project-id="2">
+                <div class="project-date">Sept 2024</div>
+                <div class="project-content">
+                    <h2>Project 2</h2>
+                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                </div>
+            </div>
+            
+            <div class="project" data-project-id="3">
+                <div class="project-date">Aug 2020</div>
+                <div class="project-content">
+                    <h2>Project 3</h2>
+                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Template -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-description"></p>
+                    
+                    <div class="modal-section">
+                        <h3>Technologies</h3>
+                        <ul class="modal-technologies"></ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Impact</h3>
+                        <ul class="modal-impact"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="section contact">
+            <div class="contact-content">
+                <h2>Let's Connect</h2>
+                <p>I'm seeking opportunities to join innovative teams pushing the boundaries of AI and software engineering.</p>
+                
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="label">Email</span>
+                            <a href="mailto:thibaultknobloch@yahoo.fr">thibaultknobloch@yahoo.fr</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Phone</span>
+                            <span>+49 157 38234540</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-divider"></div>
+                    
+                    <div class="contact-links">
+                        <a href="https://github.com/Thibault-Knobloch" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/thibault-knobloch/" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://apps.apple.com/om/developer/thibault-knobloch/id1520655213" class="contact-link" target="_blank" rel="noopener noreferrer">App Store</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Scripts -->
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/projectData.js"></script>
 </body>
 </html>
