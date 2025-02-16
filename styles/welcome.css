@@ -97,7 +97,10 @@
     }
 
     .scroll-indicator {
-        bottom: 62px;
+        bottom: 100px;
+    }
+    .scroll-indicator2 {
+        top: 100px;
     }
 }
 
@@ -120,6 +123,14 @@
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator2 {
+    margin-top: -130px;
+    margin-bottom: 250px;
+    position: relative;
     font-size: 2rem;
     animation: bounce 2s infinite;
 }
@@ -160,4 +171,4 @@
 
 @keyframes typeCharacter {
     to { opacity: 1; }
-} 
+}

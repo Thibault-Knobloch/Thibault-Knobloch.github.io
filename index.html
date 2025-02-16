@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
     <div class="container">
         <!-- Welcome Section -->
         <section class="section welcome">
+            <!-- <input type="text" class="name-input" value="" maxlength="50" /> -->
             <h1>Thibault Knobloch</h1>
             <p class="description">Full Stack Developer - AI Engineering | Crafting digital experiences and exploring the boundaries of AI integration</p>
             <div class="scroll-indicator">↓</div>
@@ -22,54 +24,386 @@
         <!-- Projects Section -->
         <section class="section projects-container">
             <div class="timeline-path"></div>
+            
             <div class="project" data-project-id="1">
                 <div class="project-date">Jan 2025</div>
                 <div class="project-content">
-                    <h2>AI-Powered Content Generator</h2>
-                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                    <h2>Agent Builder</h2>
+                    <p>A platform for building and deploying AI agents with configurable tasks and custom tools.</p>
+                    <div class="project-footer">
+                        <img src="images/agentBuilder.png" alt="Agent Builder Icon" class="project-icon" />
+                        <a href="http://agentbuilder.eu/" target="_blank" rel="noopener noreferrer" class="cta-button">See Live Project</a>
+                    </div>
                 </div>
             </div>
+
             
+
             <div class="project" data-project-id="2">
-                <div class="project-date">Sept 2024</div>
+                <div class="project-date">Sep 2024</div>
                 <div class="project-content">
-                    <h2>Project 2</h2>
-                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                    <h2>Elqi</h2>
+                    <p>A mobile app to help users manage their screen time with monthly renewable subscriptions implementation.</p>
+                    <div class="project-footer">
+                        <img src="images/elqi.png" alt="Elqi Icon" class="project-icon" />
+                        <a href="https://apps.apple.com/gb/app/elqi-dopamine-tracker/id6476441509" target="_blank" rel="noopener noreferrer" class="cta-button">See Live Project</a>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="project" data-project-id="3">
-                <div class="project-date">Aug 2020</div>
+                <div class="project-date">Mar 2022 - Present</div>
                 <div class="project-content">
-                    <h2>Project 3</h2>
-                    <p>Developed an advanced content generation platform leveraging GPT-4 and custom fine-tuned models. Created sophisticated pipelines for enhanced output quality and implemented custom training procedures.</p>
+                    <h2>Software Developer at ThoughtWorks</h2>
+                    <p>3 years of experience working as a software consultant, developing scalable and efficient software solutions for multiple clients.</p>
+                    <div class="project-footer">
+                        <img src="images/thoughtworks.png" alt="ThoughtWorks Icon" class="project-icon" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-project-id="4">
+                <div class="project-date">Aug 2024</div>
+                <div class="project-content">
+                    <h2>Munchie AI</h2>
+                    <p>An AI-powered recipe generation app to help users find recipes based on available ingredients in their fridge.</p>
+                    <div class="project-footer">
+                        <img src="images/munchie.png" alt="Munchie AI Icon" class="project-icon" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-project-id="5">
+                <div class="project-date">Jan 2022 - Aug 2023</div>
+                <div class="project-content">
+                    <h2>Multiple iOS Apps</h2>
+                    <p>I made some fun games and some useful tracking apps that I use daily.</p>
+                    <div class="project-footer">
+                        <img src="images/meworkout.png" alt="iOS Apps Icon" class="project-icon" />
+                        <a href="https://apps.apple.com/om/developer/thibault-knobloch/id1520655213" target="_blank" rel="noopener noreferrer" class="cta-button">See Live Projects</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-project-id="6">
+                <div class="project-date">Nov 2021 - Nov 2024</div>
+                <div class="project-content">
+                    <h2>CS50 Certificates</h2>
+                    <p>Completed Harvard's CS50 and CS50 Introduction to AI Programming courses, gaining in depth knowledge of machine learning fundamentals.</p>
+                    <div class="project-footer">
+                        <img src="images/cs50.jpg" alt="CS50 Icon" class="project-icon" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-project-id="7">
+                <div class="project-date">Sep 2020 - Aug 2021</div>
+                <div class="project-content">
+                    <h2>MSc Finance & Investments</h2>
+                    <p>Received my degree with 8.1 GPA at Erasmus University Rotterdam.</p>
+                    <div class="project-footer">
+                        <img src="images/erasmus.jpg" alt="MSc Icon" class="project-icon" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals Section (separate from timeline layout) -->
+            <div class="modals-container">
+                <!-- Modal for Project 1 -->
+                <div class="project-modal" id="modal-1">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Agent Builder</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">A platform for building and deploying AI agents with configurable tasks and custom tools.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>End-to-end application design, development and deployment.</li>
+                                    <li>Simple drag and drop interface for users to create complex AI agents and custom tools.</li>
+                                    <li>Entire project finished in 3 weeks, using AI enabled development for increased productivity.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Next.js</li>
+                                        <li>React</li>
+                                        <li>Python</li>
+                                        <li>LangChain</li>
+                                        <li>Flask</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/agentBuilder.png" alt="Agent Builder" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Only show if project has a link -->
+                            <div class="modal-project-link">
+                                <a href="http://agentbuilder.eu/" target="_blank" rel="noopener noreferrer">See Live Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Project 2 -->
+                <div class="project-modal" id="modal-2">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Elqi</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">A mobile app to help users manage their screen time with monthly renewable subscriptions implementation.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>Reached 300 MAU and 105€ MRR managing updates with live users.</li>
+                                    <li>Sole developer of end to end iOS mobile application.</li>
+                                    <li>Developed a sustainable subscription-based revenue model.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Swift (SwiftUI)</li>
+                                        <li>CoreData</li>
+                                        <li>Firebase</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/elqi.png" alt="Elqi" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Only show if project has a link -->
+                            <div class="modal-project-link">
+                                <a href="https://apps.apple.com/gb/app/elqi-dopamine-tracker/id6476441509" target="_blank" rel="noopener noreferrer">See Live Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue in modals-container after modal-2 -->
+
+                <!-- Modal for Project 3 -->
+                <div class="project-modal" id="modal-3">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Software Developer at ThoughtWorks</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">Working as a software consultant, developing scalable and efficient software solutions for multiple clients.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>Delivering high quality software solutions to dynamic business needs in large production applications.</li>
+                                    <li>Managing feature development end to end inside microservice architecture.</li>
+                                    <li>Maintain quality and availability with agile development practices and production monitoring.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Kotlin (SpringBoot)</li>
+                                        <li>React</li>
+                                        <li>Kubernetes</li>
+                                        <li>PostgreSQL</li>
+                                        <li>Kafka</li>
+                                        <li>RabbitMQ</li>
+                                        <li>Datadog</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/thoughtworks.png" alt="ThoughtWorks" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Project 4 -->
+                <div class="project-modal" id="modal-4">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Munchie AI</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">An AI-powered ingredient tracking app to help users find recipes based on available ingredients. Currently paused.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>Main features: image scan for ingredients, custom image and recipe generation for users.</li>
+                                    <li>Integrated generative AI capabilities from OpenAI using prompt engineering to ensure high quality formatted outputs.</li>
+                                    <li>Not live due to high costs of generating images and full recipes, unsustainable business model.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Swift (SwiftUI)</li>
+                                        <li>OpenAI API</li>
+                                        <li>Firebase</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/munchie.png" alt="Munchie AI" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Project 5 -->
+                <div class="project-modal" id="modal-5">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Multiple iOS Apps</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">I made some fun games and some useful tracking apps that I use daily.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>I learned how to break down large problems into smaller steps and manage projects end to end.</li>
+                                    <li>Tracking apps for expenses and workouts and mobile games for entertainment.</li>
+                                    <li>I have fun making these to my requirements and end up using them daily!</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Swift</li>
+                                        <li>SwiftUI</li>
+                                        <li>SpriteKit</li>
+                                        <li>CoreData</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/meworkout.png" alt="iOS Apps" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Only show if project has a link -->
+                            <div class="modal-project-link">
+                                <a href="https://apps.apple.com/om/developer/thibault-knobloch/id1520655213" target="_blank" rel="noopener noreferrer">See Live Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Project 6 -->
+                <div class="project-modal" id="modal-6">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">CS50 Certificates</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">Completed Harvard's CS50 and CS50 Introduction to AI Programming courses gaining certificates.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>Set up and trained a convoluted neural network to recognize street signs in images.</li>
+                                    <li>Built a strong foundation in algorithms and data structures.</li>
+                                    <li>Learned problem-solving techniques applicable across programming languages.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>C</li>
+                                        <li>Python</li>
+                                        <li>TensorFlow</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/cs50.jpg" alt="CS50" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Project 7 -->
+                <div class="project-modal" id="modal-7">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">MSc Finance & Investments</h2>
+                            <button class="modal-close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="modal-description">Received my degree with 8.1 GPA at Erasmus University Rotterdam.</p>
+
+                            <div class="modal-section impact-section">
+                                <h3>Impact</h3>
+                                <ul class="modal-impact">
+                                    <li>Programmed adaptive investment strategies on huge financial datasets.</li>
+                                    <li>Did an internship as a junior credit analyst gaining in-depth knowledge of financial data and the Bloomberg terminal.</li>
+                                    <li>Learned time-management, effective team collaboration, and cross-cultural communications.</li>
+                                </ul>
+                            </div>
+
+                            <div class="modal-info-sections">
+                                <div class="modal-section">
+                                    <h3>Technologies</h3>
+                                    <ul class="modal-technologies">
+                                        <li>Python</li>
+                                        <li>R</li>
+                                        <li>Brain</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-image-slider">
+                                    <div class="slider-container">
+                                        <img src="images/erasmus.jpg" alt="MSc" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Modal Template -->
-        <div class="project-modal" id="projectModal">
-            <div class="modal-content">
-                <button class="modal-close">&times;</button>
-                <div class="modal-body">
-                    <h2 class="modal-title"></h2>
-                    <p class="modal-description"></p>
-                    
-                    <div class="modal-section">
-                        <h3>Technologies</h3>
-                        <ul class="modal-technologies"></ul>
-                    </div>
-                    
-                    <div class="modal-section">
-                        <h3>Impact</h3>
-                        <ul class="modal-impact"></ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Contact Section -->
         <section class="section contact">
+            <div class="scroll-indicator2">↑</div>
             <div class="contact-content">
                 <h2>Let's Connect</h2>
                 <p>I'm seeking opportunities to join innovative teams pushing the boundaries of AI and software engineering.</p>
@@ -100,5 +434,6 @@
     <!-- Scripts -->
     <script src="scripts/projects.js"></script>
     <script src="scripts/projectData.js"></script>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>
