@@ -57,14 +57,14 @@
 }
 
 .project-content {
-    background: rgba(25, 25, 25, 0.05);
+    background: rgba(65, 65, 65, 0.025);
     padding: 2rem;
     border-radius: 8px;
     position: relative;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     margin-top: 2rem;
-    box-shadow: 1px 1px 3px 3px rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 3px 3px rgba(0, 206, 201, 0.1);
 }
 
 .project-date {
@@ -92,11 +92,53 @@
     color: var(--text-color);
 }
 
+/* Project footer and buttons */
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.project-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    align-self: flex-end;
+    transition: all 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    background: transparent;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Make projects clickable */
+.project {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
 /* Responsive Layout */
 @media (max-width: 1200px) {
     .projects-container {
         display: block;
-        padding: 2rem 30px;
     }
     
     .timeline-path {
@@ -150,9 +192,6 @@
 }
 
 @media (max-width: 600px) {
-    .projects-container {
-        padding: 2rem 15px;
-    }
     
     .timeline-path {
         left: 1rem;
@@ -171,50 +210,6 @@
         min-width: 100px;
         padding: 0.4rem 0.8rem;
     }
-}
-
-
-/* Project footer and buttons */
-.project-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-}
-
-.project-icon {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-.cta-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    align-self: flex-end;
-    transition: all 0.2s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    background: transparent;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-/* Make projects clickable */
-.project {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.project:hover {
-    transform: scale(1.02);
 }
 
 /* Prevent hover scale in responsive mode */

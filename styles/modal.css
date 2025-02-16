@@ -133,58 +133,6 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Modal responsive adjustments */
-@media (max-width: 768px) {
-    .project-modal {
-        padding: 1rem;
-    }
-    
-    .modal-content {
-        padding: 1.5rem;
-    }
-    
-    .modal-info-sections {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .modal-technologies {
-        order: 1;
-    }
-
-    .modal-image-slider {
-        order: 2;
-    }
-
-    .slider-container {
-        height: 300px;
-    }
-
-    .modal-project-link {
-        margin-top: 1.5rem;
-    }
-    
-    .modal-project-link a {
-        width: 100%;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider-container {
-        height: 250px;
-    }
-}
-
-/* Slider Navigation for Mobile */
-@media (max-width: 480px) {
-    .slider-nav {
-        width: 32px;
-        height: 32px;
-        font-size: 1.2rem;
-    }
-}
 
 /* Image Slider Styles */
 .modal-image-slider {
@@ -193,7 +141,7 @@
     border-radius: 8px;
     overflow: hidden;
     margin: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.025);
 }
 
 .slider-container {
@@ -324,4 +272,61 @@
     background: transparent;
     color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+
+/* Modal responsive adjustments */
+@media (max-width: 768px) {
+    .project-modal {
+        padding: 1rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
+    }
+    
+    .modal-info-sections {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .modal-technologies {
+        order: 1;
+        width: 100%;
+    }
+
+    .modal-image-slider {
+        order: 2;
+        width: 100%;
+    }
+
+    .slider-container {
+        height: 300px;
+    }
+
+    .modal-project-link {
+        margin-top: 1.5rem;
+    }
+    
+    .modal-project-link a {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 250px;
+    }
+}
+
+/* Slider Navigation for Mobile */
+@media (max-width: 480px) {
+    .slider-nav {
+        width: 32px;
+        height: 32px;
+        font-size: 1.2rem;
+    }
 }
