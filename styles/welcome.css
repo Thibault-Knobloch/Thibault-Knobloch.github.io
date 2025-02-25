@@ -9,6 +9,10 @@
     position: relative;
 }
 
+.name-container {
+    position: relative;
+}
+
 .typing {
     white-space: nowrap;
     overflow: hidden;
@@ -47,6 +51,31 @@
     content: none;
 }
 
+.welcome .name-input {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    position: relative;
+}
+
+.welcome .name-input:focus {
+    outline: none;
+}
+
+.welcome .name-input::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .description {
     color: rgb(161, 161, 161);
     font-size: 1.2rem;
@@ -73,7 +102,8 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .welcome h1 {
+    .welcome h1,
+    .welcome .name-input {
         font-size: 3.5rem;
     }
     
@@ -87,7 +117,8 @@
         padding: 2rem 20px;
     }
 
-    .welcome h1 {
+    .welcome h1,
+    .welcome .name-input {
         font-size: 2.8rem;
     }
     
@@ -109,7 +140,8 @@
         padding: 2rem 15px;
     }
 
-    .welcome h1 {
+    .welcome h1,
+    .welcome .name-input {
         font-size: 2.2rem;
     }
     
